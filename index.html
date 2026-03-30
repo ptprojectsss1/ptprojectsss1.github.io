@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PT Projects</title>
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #f4f6f9;
+  color: #1a1a1a;
+}
+
+/* NAV */
+nav {
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(10px);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+}
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #0a2540;
+  font-weight: 500;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, rgba(10,37,64,0.95), rgba(0,123,255,0.7)),
+  url('https://images.unsplash.com/photo-1557804506-669a67965ba0') center/cover;
+  color: white;
+  padding: 160px 20px;
+  text-align: center;
+}
+header h1 { font-size: 54px; }
+header p { font-size: 20px; margin-bottom: 30px; }
+header button {
+  background: white;
+  color: #0a2540;
+  padding: 14px 28px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* SECTIONS */
+section { padding: 90px 20px; }
+.container { max-width: 1150px; margin: auto; }
+
+h2 { font-size: 34px; margin-bottom: 25px; }
+
+.light { background: #ffffff; }
+.soft { background: #eef2f7; }
+.dark { background: #0a2540; color: white; }
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 30px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+}
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* CONTACT */
+.contact {
+  background: linear-gradient(135deg, #0a2540, #007BFF);
+  color: white;
+}
+.contact input, .contact textarea {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: none;
+}
+.contact button {
+  background: white;
+  color: #0a2540;
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  background: #0a2540;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+.message { margin-top: 10px; }
+</style>
+</head>
+
+<body>
+
+<nav>
+  <strong>PT Projects</strong>
+  <div>
+    <a href="#about">Meistä</a>
+    <a href="#services">Palvelut</a>
+    <a href="#values">Arvot</a>
+    <a href="#contact">Yhteys</a>
+  </div>
+</nav>
+
+<header>
+  <h1>PT Projects</h1>
+  <p>Luotettava kumppani liiketoiminnan kehittämiseen</p>
+  <button onclick="document.getElementById('contact').scrollIntoView()">Ota yhteyttä</button>
+</header>
+
+<section id="about" class="light">
+<div class="container">
+  <h2>Keitä olemme</h2>
+  <p>PT Projects on asiantuntijayritys, joka keskittyy liiketoiminnan kehittämiseen, projektinhallintaan ja konsultointiin. Autamme yrityksiä parantamaan suorituskykyään ja saavuttamaan strategiset tavoitteensa.</p>
+</div>
+</section>
+
+<section id="services" class="soft">
+<div class="container">
+  <h2>Palvelumme</h2>
+
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1523958203904-cdcb402031fd">
+      <h3>Liiketoiminnan johtaminen</h3>
+      <p>Kehitämme organisaation toimintaa ja tehokkuutta.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9">
+      <h3>Projektinhallinta</h3>
+      <p>Johdamme projekteja tehokkaasti alusta loppuun.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0">
+      <h3>Konsultointi ja analyysi</h3>
+      <p>Tarjoamme strategista neuvontaa ja analyysiä.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="values" class="light">
+<div class="container">
+  <h2>Arvomme</h2>
+  <p>Luotettavuus, avoimuus ja jatkuva kehitys ovat toimintamme perusta.</p>
+</div>
+</section>
+
+<section class="soft">
+<div class="container">
+  <h2>Lähestymistapamme</h2>
+  <p>Yhdistämme strategisen ajattelun ja käytännön toteutuksen.</p>
+</div>
+</section>
+
+<section class="dark">
+<div class="container">
+  <h2>Miksi valita meidät</h2>
+  <p>Tarjoamme selkeitä ratkaisuja ja mitattavia tuloksia.</p>
+</div>
+</section>
+
+<section class="light">
+<div class="container">
+  <h2>Yhteistyö</h2>
+  <p>Teemme tiivistä yhteistyötä asiakkaidemme kanssa varmistaaksemme onnistuneet projektit.</p>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div class="container">
+  <h2>Ota yhteyttä</h2>
+  <p>box@pt-projects.com</p>
+  <p>Itäinentie 1B 1, 06100 Porvoo, Finland</p>
+
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Koko nimi *">
+    <input type="email" id="email" placeholder="Sähköposti *">
+    <textarea id="message" placeholder="Viesti *"></textarea>
+    <button type="submit">Lähetä</button>
+    <div class="message" id="formMessage"></div>
+  </form>
+</div>
+</section>
+
+<footer>
+  © 2026 PT Projects
+</footer>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  let name = document.getElementById("name").value.trim();
+  let email = document.getElementById("email").value.trim();
+  let message = document.getElementById("message").value.trim();
+  let formMessage = document.getElementById("formMessage");
+
+  if(name === "" || email === "" || message === "") {
+    formMessage.style.color = "yellow";
+    formMessage.textContent = "Täytä kaikki kentät.";
+    return;
+  }
+
+  let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,}$/;
+  if(!email.match(emailPattern)) {
+    formMessage.style.color = "yellow";
+    formMessage.textContent = "Virheellinen sähköposti.";
+    return;
+  }
+
+  formMessage.style.color = "lightgreen";
+  formMessage.textContent = "Viesti lähetetty onnistuneesti!";
+});
+</script>
+
+</body>
+</html>
